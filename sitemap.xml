@@ -2,39 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://bitai.github.io/blog/2017/02/28/good-to-great/</loc>
+    <loc>https://bitai.github.io/spartech/blog/2017/02/28/good-to-great/</loc>
     <lastmod>2017-02-28T01:11:44+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bitai.github.io/blog/</loc>
-    <lastmod>2017-02-28T01:11:44+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bitai.github.io/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bitai.github.io/contact/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bitai.github.io/categories/%E3%81%94%E5%A0%B1%E5%91%8A/</loc>
+    <loc>https://bitai.github.io/spartech/blog/</loc>
     <lastmod>2017-02-28T01:11:44+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bitai.github.io/</loc>
+    <loc>https://bitai.github.io/spartech/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bitai.github.io/spartech/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>https://bitai.github.io/spartech/categories/%E3%81%94%E5%A0%B1%E5%91%8A/</loc>
     <lastmod>2017-02-28T01:11:44+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bitai.github.io/faq/</loc>
+    <loc>https://bitai.github.io/spartech/</loc>
+    <lastmod>2017-02-28T01:11:44+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bitai.github.io/spartech/faq/</loc>
   </url>
   
 </urlset>

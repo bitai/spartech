@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ご報告 on 情熱エンジニア教室のスパルテック</title>
-    <link>https://bitai.github.io/categories/%E3%81%94%E5%A0%B1%E5%91%8A/index.xml</link>
+    <link>https://bitai.github.io/spartech/categories/%E3%81%94%E5%A0%B1%E5%91%8A/index.xml</link>
     <description>Recent content in ご報告 on 情熱エンジニア教室のスパルテック</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>Copyright (c) 2015 - 2017, EngineeringNote all rights reserved.</copyright>
-    <atom:link href="https://bitai.github.io/categories/%E3%81%94%E5%A0%B1%E5%91%8A/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bitai.github.io/spartech/categories/%E3%81%94%E5%A0%B1%E5%91%8A/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>スパルテックのWebサイトをリニューアルいたしました!</title>
-      <link>https://bitai.github.io/blog/2017/02/28/good-to-great/</link>
+      <link>https://bitai.github.io/spartech/blog/2017/02/28/good-to-great/</link>
       <pubDate>Tue, 28 Feb 2017 01:11:44 +0900</pubDate>
       
-      <guid>https://bitai.github.io/blog/2017/02/28/good-to-great/</guid>
+      <guid>https://bitai.github.io/spartech/blog/2017/02/28/good-to-great/</guid>
       <description>&lt;p&gt;この度、スパルテックはWebサイトを新たにリニューアルいたしました(パチパチ)。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br&gt;
 &lt;div style=&#34;width:70%&#34;&gt;
-&lt;img src=&#34;https://bitai.github.io/img/blog/blog1.png&#34; alt=&#34;サイトトップ絵&#34; /&gt;
+&lt;img src=&#34;https://bitai.github.io/spartech/img/blog/blog1.png&#34; alt=&#34;サイトトップ絵&#34; /&gt;
 &lt;br&gt;
 &lt;br&gt;
 &lt;br&gt;
 &amp;lt;測定結果&amp;gt;
-&lt;img src=&#34;https://bitai.github.io/img/blog/blog2.png&#34; alt=&#34;サイトトップページのレスポンス&#34; /&gt;
+&lt;img src=&#34;https://bitai.github.io/spartech/img/blog/blog2.png&#34; alt=&#34;サイトトップページのレスポンス&#34; /&gt;
 &lt;/div&gt;
 &lt;br&gt;
 &lt;br&gt;
@@ -76,7 +76,7 @@
 
 &lt;p&gt;1st Viewのイメージ
 &lt;div style=&#34;width:70%&#34;&gt;
-&lt;img src=&#34;https://bitai.github.io/img/blog/blog3.png&#34; alt=&#34;サイトトップページ&#34; /&gt;
+&lt;img src=&#34;https://bitai.github.io/spartech/img/blog/blog3.png&#34; alt=&#34;サイトトップページ&#34; /&gt;
 &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;1st Viewが決まれば後は「ユーザがそこからどんな情報を知りたがるか?」を予想し構造を考えます。ここは箇条書きで思いついたことを書きます。&lt;/p&gt;
@@ -91,7 +91,7 @@
 
 &lt;p&gt;2nd Viewのイメージ
 &lt;div style=&#34;width:70%&#34;&gt;
-&lt;img src=&#34;https://bitai.github.io/img/blog/blog4.png&#34; alt=&#34;サイトトップページ&#34; /&gt;
+&lt;img src=&#34;https://bitai.github.io/spartech/img/blog/blog4.png&#34; alt=&#34;サイトトップページ&#34; /&gt;
 &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
@@ -274,7 +274,7 @@ $ cd ..
 
 &lt;p&gt;&lt;br&gt;
 &lt;div style=&#34;width:70%&#34;&gt;
-&lt;img src=&#34;https://bitai.github.io/img/blog/blog5.png&#34; alt=&#34;テスト&#34; /&gt;
+&lt;img src=&#34;https://bitai.github.io/spartech/img/blog/blog5.png&#34; alt=&#34;テスト&#34; /&gt;
 &lt;/div&gt;
 &lt;br&gt;&lt;/p&gt;
 
@@ -290,7 +290,7 @@ $ cd ..
 
 &lt;p&gt;&lt;br&gt;
 &lt;div style=&#34;width:70%&#34;&gt;
-&lt;img src=&#34;https://bitai.github.io/img/blog/blog6.png&#34; alt=&#34;テスト&#34; /&gt;
+&lt;img src=&#34;https://bitai.github.io/spartech/img/blog/blog6.png&#34; alt=&#34;テスト&#34; /&gt;
 &lt;/div&gt;
 &lt;br&gt;&lt;/p&gt;
 
@@ -299,7 +299,7 @@ $ cd ..
 
 &lt;p&gt;&lt;br&gt;
 &lt;div style=&#34;width:70%&#34;&gt;
-&lt;img src=&#34;https://bitai.github.io/img/blog/blog1.png&#34; alt=&#34;サイトトップ絵&#34; /&gt;
+&lt;img src=&#34;https://bitai.github.io/spartech/img/blog/blog1.png&#34; alt=&#34;サイトトップ絵&#34; /&gt;
 &lt;/div&gt;
 &lt;br&gt;&lt;/p&gt;
 
@@ -307,7 +307,7 @@ $ cd ..
 
 &lt;p&gt;&lt;br&gt;
 &lt;div style=&#34;width:70%&#34;&gt;
-&lt;img src=&#34;https://bitai.github.io/img/blog/blog7.png&#34; alt=&#34;サイトトップ絵&#34; /&gt;
+&lt;img src=&#34;https://bitai.github.io/spartech/img/blog/blog7.png&#34; alt=&#34;サイトトップ絵&#34; /&gt;
 &lt;/div&gt;
 &lt;br&gt;&lt;/p&gt;
 
@@ -321,7 +321,7 @@ $ cd ..
 
 &lt;p&gt;&lt;br&gt;
 &lt;div style=&#34;width:70%&#34;&gt;
-&lt;img src=&#34;https://bitai.github.io/img/blog/blog8.png&#34; alt=&#34;サイトトップ絵&#34; /&gt;
+&lt;img src=&#34;https://bitai.github.io/spartech/img/blog/blog8.png&#34; alt=&#34;サイトトップ絵&#34; /&gt;
 &lt;/div&gt;
 &lt;br&gt;&lt;/p&gt;
 
