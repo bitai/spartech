@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on 情熱エンジニア教室のスパルテック</title>
+    <link>http://spa.e-note.link/blog/index.xml</link>
+    <description>Recent content in Blogs on 情熱エンジニア教室のスパルテック</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>Copyright (c) 2015 - 2017, EngineeringNote all rights reserved.</copyright>
+    <lastBuildDate>Tue, 28 Feb 2017 01:11:44 +0900</lastBuildDate>
+    <atom:link href="http://spa.e-note.link/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>スパルテックのWebサイトをリニューアルいたしました!</title>
+      <link>http://spa.e-note.link/blog/2017/02/28/good-to-great/</link>
+      <pubDate>Tue, 28 Feb 2017 01:11:44 +0900</pubDate>
+      
+      <guid>http://spa.e-note.link/blog/2017/02/28/good-to-great/</guid>
+      <description>&lt;p&gt;この度、スパルテックはWebサイトを新たにリニューアルいたしました(パチパチ)。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;div style=&#34;width:70%&#34;&gt;
+&lt;img src=&#34;http://spa.e-note.link/img/blog/blog1.png&#34; alt=&#34;サイトトップ絵&#34; /&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&amp;lt;測定結果&amp;gt;
+&lt;img src=&#34;http://spa.e-note.link/img/blog/blog2.png&#34; alt=&#34;サイトトップページのレスポンス&#34; /&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;速い。&lt;/b&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;「WordPressってこんなに速くなるの？」と思われた方もいるかと思います。実際、キャッシュサーバなどインフラ周りを整理すれば同等の速度を出すことは可能ですが、Linux周りの知識が必要で、少し面倒です。&lt;/p&gt;
+
+&lt;p&gt;今回のサイト、実はWordPressではなく「Hugo」というフレームワークで実装しています。そんなわけで今回は当サイトの作成に使用した静的サイトジェネレーターHugoを、スパルテックのサイトの制作実例に基づきながらご紹介していきます。&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;リニューアルの背景と目的&#34;&gt;リニューアルの背景と目的&lt;/h2&gt;
+
+&lt;p&gt;Hugoをご紹介する前に今回のサイトリニューアルの背景と目的をご紹介させていただきます。そもそもスパルテックとは&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;エンジニアの開発スキルを手に入れたい社会人向けの&lt;/li&gt;
+&lt;li&gt;現役エンジニアによるスパルタな少人数制エンジニア教室&lt;/li&gt;
+&lt;li&gt;料金はチケット制&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;という、最近流行のプログラミングスクールです。スパルテックというのは「スパルタ + テクノロジー」を掛け合わせた造語です。&lt;strong&gt;ネーミングは私ではありません。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;他のプログラミングスクールと違うのは講師が現役バリバリのリードエンジニアであることと、レンタルスペースを利用して少人数制、低コストの価格帯を実現していることでしょう。&lt;/p&gt;
+
+&lt;p&gt;これまでストアカというサイトを使って地味に活動していたのですが、受講生の総計が&lt;strong&gt;250名&lt;/strong&gt;を超えてきたのをキッカケに、そろそろ事業サイトを作ろうと考えました。ただし、実務能力を謳った講座を開いている手前、下手なサイトは作れません。&lt;/p&gt;
+
+&lt;p&gt;そこで今回はグローバルでトレンディな技術を使いつつ、入門者でも導入しやすい技術で構築し、かつリードエンジニアとしてのスキルも存分に発揮しようと考えました。さっそく見て行きましょう。&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;サイト設計&#34;&gt;サイト設計&lt;/h2&gt;
+
+&lt;p&gt;すでに受け入れられている週末講座があるので、そちらをベースに設計を考えて行きます。大事なのはコンテンツ、何を届けたいかを明確にすることでしょう。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;アジャイル開発コース&lt;/li&gt;
+&lt;li&gt;WordPressマスターコース&lt;/li&gt;
+&lt;li&gt;就職支援コース&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;また、スパルテックは巷のプログラミング系スクールと違って月額固定ではなく、チケット制であることも特徴です。これはユーザにとっては大きなメリットです。&lt;/p&gt;
+
+&lt;p&gt;なぜか？チケット制にすることサービス提供側が「品質の良い講座を届けること」に集中することができ、その品質がユーザの、次の購入動機に繋がります。サービス提供側もユーザ側もWin-Winになる理想の形ですね。&lt;/p&gt;
+
+&lt;p&gt;1st Viewのイメージ
+&lt;div style=&#34;width:70%&#34;&gt;
+&lt;img src=&#34;http://spa.e-note.link/img/blog/blog3.png&#34; alt=&#34;サイトトップページ&#34; /&gt;
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;1st Viewが決まれば後は「ユーザがそこからどんな情報を知りたがるか?」を予想し構造を考えます。ここは箇条書きで思いついたことを書きます。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;「このサービスの評判は良いのかな？」&lt;/li&gt;
+&lt;li&gt;「講師はどんな人間なのかな？」&lt;/li&gt;
+&lt;li&gt;「講師の情報をもっと見れないかな？」&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;これらの疑問に応えることは2nd Viewの役目です。&lt;/p&gt;
+
+&lt;p&gt;2nd Viewのイメージ
+&lt;div style=&#34;width:70%&#34;&gt;
+&lt;img src=&#34;http://spa.e-note.link/img/blog/blog4.png&#34; alt=&#34;サイトトップページ&#34; /&gt;
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;コストを考える&#34;&gt;コストを考える&lt;/h2&gt;
+
+&lt;p&gt;これとは別にFAQ(良くある質問)のページや、お問い合わせページも必要です。また講座ですので決済機能も必要です。&lt;/p&gt;
+
+&lt;p&gt;しかしここで少し考える必要があります。&lt;/p&gt;
+
+&lt;p&gt;こういった機能は開発も保守もコストになります。私はエンジニアなので決済機能もお問い合わせページも自力で実装できますが、コストに見合う価値がなければ実装はするべきではありません。&lt;/p&gt;
+
+&lt;p&gt;こうした機能は本当に自分で実装しなければならないのでしょうか？決済もお問い合わせもありふれた機能です。自分で実装しないで済む方法があるはずで、そして、実際にあります。&lt;/p&gt;
+
+&lt;p&gt;今回も、これらの機能は極力外部サービスに依存することとします。これにより大幅なコスト削減になりました。かくして以下のようになりました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;講座の掲載と決済 =&amp;gt; &lt;a href=&#34;https://www.street-academy.com/steachers/6994#profile-tabs&#34;&gt;ストアカ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;お問い合わせ =&amp;gt; &lt;a href=&#34;https://formspree.io/&#34;&gt;FormSpree&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;FAQ =&amp;gt; ZenDesk&amp;hellip;と言いたいところですがまだその規模ではないので一枚ページを用意します。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ここまででサイト制作の準備ができました！これらの機能は後々、実装方針を決めて今はこれで十分です。&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;hugoチュートリアル&#34;&gt;Hugoチュートリアル&lt;/h2&gt;
+
+&lt;p&gt;ここからは、実際にHugoを使ったサイト制作を扱います。
+白井の環境はMacですので、成り行きでMac向けの説明となります。&lt;/p&gt;
+
+&lt;p&gt;インストール&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ brew update
+$ brew install go
+$ brew install hugo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;インストールされたHugoのバージョンが古ければ下記を実行します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ brew upgrade hugo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Hugoがインストールされました。&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugoの公式はこちら&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://gohugo.io/overview/quickstart/&#34;&gt;クイックスタート&lt;/a&gt;は公式サイトに載っています。下記はHugoアプリケーションを作成するコマンドです。(your_appは好みで変更してください)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hugo new site your_app
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;your_app/&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;|-- archetypes
+|-- config.toml
+|-- content
+|-- data
+|-- layouts
+`-- static
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;your_appディレクトリ配下にHugoのディレクトリ群が生成されました。&lt;/p&gt;
+
+&lt;p&gt;細かい説明は公式サイトに委ねるとして、Hugoは静的サイトジェネレーターの名前を関している通り「静的サイト」、つまりHTML/CSSなど静的ファイルがメインで構成されるWebサイトを作るためのツールです。細かい動きを加えたければ全てJavaScriptで実装することになります。&lt;/p&gt;
+
+&lt;p&gt;ブログのような機能を持たせたければ、従来であればPHPやRubyなどのプログラミング言語を使ったDBアプリケーションを作成するしかありませんでしたが、静的サイトはサーバを経由しないため爆速になります。ではどうやってブログを追加するか？&lt;strong&gt;自分でブログ用のhtmlを作成してアップロードし、全ページの反映を手動で行なうしかありません。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;しかしHugoはこれをファイルの編集だけで実現しています。早速見てみましょう。&lt;/p&gt;
+
+&lt;p&gt;※厳密に言えば「Go言語」という別のプログラミング言語が動いているのですが、とりあえずは分からなくても扱うことができます。&lt;/p&gt;
+
+&lt;p&gt;ブログ記事の編集用ファイルを作成&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hugo new post/good-to-great.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;your_app/&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;|-- archetypes
+|-- config.toml
+|-- content
+      |--post
+          |--good-to-great.md
+|-- data
+|-- layouts
+`-- static
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;good-to-great.mdが追加されたことにより、「/post/2017/02/28/good-to-great/」などのようなパスが有効になります。&lt;/p&gt;
+
+&lt;p&gt;Hugoの便利な所は、&lt;strong&gt;この追加による変更をキャッチしサイト全体を変更に合った形で組み替えてくれること&lt;/strong&gt;にあります。これにより「あたかも裏でサーバが動いているような処理」を静的ファイルだけで実現できるわけです。便利でしょ？&lt;/p&gt;
+
+&lt;p&gt;さてgood-great.mdの中身は通常のhtmlも書けますが、マークダウン方式という略式記号が使えます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;* これは
+* テスト
+* です
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;と打つと&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;ul&amp;gt;
+  &amp;lt;li&amp;gt;これは&amp;lt;/li
+  &amp;lt;li&amp;gt;テスト&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;です&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;とHTMLに変換してくれます。ある程度HTMLに精通していなければいけませんが、分かってくると爆速でHTMLが書けるようになります。&lt;/p&gt;
+
+&lt;h2 id=&#34;hugoのテーマを使ってみよう&#34;&gt;Hugoのテーマを使ってみよう&lt;/h2&gt;
+
+&lt;p&gt;このタイミングでHugoのサーバを起動し、今の状態を確認してみましょう。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hugo server --buildDrafts
+Started building sites ...
+Built site for language en:
+1 draft content
+0 future content
+0 expired content
+0 regular pages created
+0 other pages created
+0 non-page files copied
+0 paginator pages created
+0 tags created
+0 categories created
+total in 18 ms
+Serving pages from memory
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;こんな感じでターミナルにズラズラ文字列が並ぶと思います。この状態でブラウザのURL欄にlocalhost:1313と真っ白い画面が表示されると思います。&lt;/p&gt;
+
+&lt;p&gt;何故真っ白い画面か？HugoにはWordPressのようなデフォルトテーマが存在せず、先程投稿したブログを表示させるにはGo言語による実装が必要です。&lt;/p&gt;
+
+&lt;p&gt;なんだ無理じゃないか！&lt;/p&gt;
+
+&lt;p&gt;と思われた方もいるかもしれませんが、安心してください。Hugoにもテーマがありますので、自分が作りたいサイトに近い構造のテーマを見つけて適応すれば良いのです。それでしばらく運営してみて、慣れてきたらGo言語の習得にチャレンジしてください。&lt;/p&gt;
+
+&lt;p&gt;ではテーマをインストールしましょう。デフォルトではテーマ用のフォルダがないので作成します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ mkdir themes
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;your_app/&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;|-- archetypes
+|-- config.toml
+|-- content
+      |--post
+          |--good-to-great.md
+|-- data
+|-- layouts
+|-- themes &amp;lt;- これ
+`-- static
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;次にこのthemesフォルダにHugoのテーマを設置します。&lt;a href=&#34;http://themes.gohugo.io/&#34;&gt;テーマ一覧&lt;/a&gt;から自分の目的に沿ったテーマを選択し、ページ上部すぐ下の「Installation」の項目を参考に、githubからテーマをpullします。&lt;/p&gt;
+
+&lt;p&gt;githubって？という方は近々講座を開設しますので、そちらをご受講ください！&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cd themes
+$ git clone https://github.com/dim0627/hugo_theme_robust.git
+$ cd ..
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;これでthemesにHugoのテーマがインストールされました。このテーマを適応させるには一旦サーバを止め、テーマを指定して起動し直す必要があります。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hugo server --theme=hugo_theme_robust --buildDrafts
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ちなみに先程からさらりと出ている&amp;ndash;buildDraftsオプションですが、これは下書き状態の投稿も表示させるという意味です。公開状態にしたければ&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hugo undraft content/post/good-to-great.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;などのようにします。&lt;/p&gt;
+
+&lt;p&gt;localhost:1313 に改めてアクセスしてみましょう。&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;div style=&#34;width:70%&#34;&gt;
+&lt;img src=&#34;http://spa.e-note.link/img/blog/blog5.png&#34; alt=&#34;テスト&#34; /&gt;
+&lt;/div&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;無事に表示されましたね。^^&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;hugoのテーマに沿ってスパルテックのサイトを作る&#34;&gt;Hugoのテーマに沿ってスパルテックのサイトを作る。&lt;/h2&gt;
+
+&lt;p&gt;スパルテックのサイトは以下のテーマを使用しています。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://themes.gohugo.io/theme/hugo-universal-theme/&#34;&gt;http://themes.gohugo.io/theme/hugo-universal-theme/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;div style=&#34;width:70%&#34;&gt;
+&lt;img src=&#34;http://spa.e-note.link/img/blog/blog6.png&#34; alt=&#34;テスト&#34; /&gt;
+&lt;/div&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;見た瞬間、「まんまイメージ通りだ！」と思いました。このテーマが使いたかったからHugoにしたというのは、ココだけの話です。
+とりあえず1st Viewはこんな感じ。&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;div style=&#34;width:70%&#34;&gt;
+&lt;img src=&#34;http://spa.e-note.link/img/blog/blog1.png&#34; alt=&#34;サイトトップ絵&#34; /&gt;
+&lt;/div&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;細かい所はいずれデザイナーさんに頼んで何とかしてもらおうと考えていますが十分です。次は2nd Viewです。&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;div style=&#34;width:70%&#34;&gt;
+&lt;img src=&#34;http://spa.e-note.link/img/blog/blog7.png&#34; alt=&#34;サイトトップ絵&#34; /&gt;
+&lt;/div&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;themeに既に感想ページとして用意されていました。これをそのまま流用します。&lt;/p&gt;
+
+&lt;p&gt;お声ですが、1年半ほど活動し、おかげ様で多くの受講生の方から様々なご感想を戴いております。2017年3月2日現在、98件中95件がポジティブな感想となっております。&lt;strong&gt;満足率96%!!&lt;/strong&gt; 皆様、本当にありがとうございます。&lt;/p&gt;
+
+&lt;p&gt;ちなみに個人的には良い感想を戴けなかった3件がちょっとかなり凹んでしまったのですが、反省材料として改善に努めます。&lt;/p&gt;
+
+&lt;p&gt;さてさて、そんな感じで感想ブロックは以下の通りになりました。&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;div style=&#34;width:70%&#34;&gt;
+&lt;img src=&#34;http://spa.e-note.link/img/blog/blog8.png&#34; alt=&#34;サイトトップ絵&#34; /&gt;
+&lt;/div&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;これ以降に紹介欄とブログ欄がありますが、こちらは頻繁に手を加えるので直接ご確認いただければ幸いです。&lt;/p&gt;
+
+&lt;p&gt;テーマだとこの下に「クライアント欄」がありまして、私であれば法人研修実績が該当するのでしょうが、法人研修はスパルテックとして行なっていないので削除しました。ちなみにザックリ20-30社ぐらいは研修した経験があります。&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;完成に向けて&#34;&gt;完成に向けて&lt;/h2&gt;
+
+&lt;p&gt;2017年3月2日現在、スパルテックサイトは建設中であり、この解説は一旦ここで筆を置かせて頂きます。たまに来てどんな改善が行なわれたか確認していただけると嬉しいです。&lt;/p&gt;
+
+&lt;p&gt;Hugoは素晴らしい静的サイトジェネレータです。今回はザックリとした解説でしたが、様々な奥深い仕様を内包しています。&lt;/p&gt;
+
+&lt;p&gt;また、本格的にHugoを使ってみたい、ついでにWeb制作を学びたい、という方は&lt;a href=&#34;https://www.street-academy.com/myclass/20001&#34;&gt;ストアカのHugo講座&lt;/a&gt;をご受講ご検討いただければ幸いです。実際にHugoでサイト運営をする立場から、実務に繋がるノウハウを直接伝授いたします。&lt;/p&gt;
+
+&lt;p&gt;ちなみに個人的にはこんな風に考えています。&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;ja&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;最初からガッツリグロースする前提でやって、Webリファレンス見ながらやりたかったらRails、ライブラリのコードが気に入らなくてほぼ自分で任意の実装がしたかったらLaravel、更新前提で管理画面やSEO対策などある程度揃っているならWordPress、それ以外はhugo。&lt;/p&gt;&amp;mdash; はしぱん@CTO (@D262G) &lt;a href=&#34;https://twitter.com/D262G/status/836216261444943872&#34;&gt;2017年2月27日&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;それではまたお会いしましょう！&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
